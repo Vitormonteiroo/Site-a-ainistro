@@ -24,6 +24,7 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -134,4 +135,15 @@ footer {
   padding: 70px;
   text-align: center;
   font-size: 14px;
+}
+
+/* midia queries*/
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.avif);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.avif);
+  }
 }
